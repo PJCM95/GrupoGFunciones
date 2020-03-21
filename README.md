@@ -1,14 +1,11 @@
 # GrupoGFunciones
 Trabajo de entorno 2020.
 -----------------------------------------------------------------------
-Pruebas realizadas por: 
-Pablo Jose Cerero Mateos 
-Jesus Cansino Molina
-Jose Reina Montes
+Pruebas realizadas por: Pablo Jose Cerero Mateos \\ Jesus Cansino Molina \\ Jose Antonio Reina Montes
 -------------------------------------------------------------------------
 
 Las funciones que vamos a realizar son las siguientes, donde incluye el nombre del integrante que ha realizado dicha prueba:
-
+-----------------------------------------------------------------------------------
 
 Funcion1 que comprueba si un numero es divisible entre X  --> Jose
 ----------------------------------------------------------------------------
