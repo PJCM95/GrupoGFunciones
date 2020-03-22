@@ -1,6 +1,6 @@
 # GrupoGFunciones
 Trabajo de entorno 2020.
------------------------------------------------------------------------
+-------------------------------------------------------------------------
 Pruebas realizadas por: Pablo Jose Cerero Mateos \\ Jesus Cansino Molina \\ Jose Antonio Reina Montes
 -------------------------------------------------------------------------
 
