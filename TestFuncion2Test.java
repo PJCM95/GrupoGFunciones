@@ -36,21 +36,30 @@ import static org.junit.jupiter.api.Assertions.*;
         }
        
 
-            //JosÃ© Antonio Reina Montes
+            //José Antonio Reina Montes
         @DisplayName("Test de Caja Negra Con Un Valor Nulo")
         @Test
         void test1() {
-            assertNull(funcion2.Funcion2(null));
+            assertNull(Funcion2.funcion2(null));
         }
        
         //Jesus Cansino Molina
        
         @DisplayName("Test de Caja Negra con un valor")
         @Test
-        void testFuncion2() {
-            assertEquals(true, funcion.funcion2(7));
+        void test2() {
+            assertEquals(true, Funcion2.funcion2(7));
         }
-        
-        
+
+        //Pablo Cerero 
+
+         @DisplayName("Test de Analisis de valores limites")
+             @Test 
+    void test3() {
+        assertEquals(true, Funcion2.funcion2(500));
+        assertEquals(false, Funcion2.funcion2(501));
+        assertEquals(true, Funcion2.funcion2(400));
+        assertEquals(false, Funcion2.funcion2(399));
+    }   
      
     }
