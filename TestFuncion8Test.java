@@ -47,10 +47,11 @@ public class TestFuncion8Test {
             assertEquals(true, funcion8.Funcion8 (time, alumnos));
 
     }
-//Jesus Cansino Molina
-@DisplayName ("Test Limites")
-    @Test 
-    void test2() {
-    }
+//Jesus Cansino Molina && Pablo Cerero
+     @DisplayName(" Caja Negra de array")
+     @Test
+     void testFuncion8() {
+         assertEquals(true, funcion.funcion8({{50,150,100},{250,250,100},{60,110,80},{150,50,200}}, ("Pablo","Jesus","Jose"));
+     }
 
 }
