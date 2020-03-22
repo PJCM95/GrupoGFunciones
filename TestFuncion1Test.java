@@ -40,11 +40,21 @@ public class TestFuncion1Test {
 	
 	//José Antonio Reina Montes
 
+
+
+
 	@Test
 	@DisplayName("Test de Caja Negra Nuestro nº es divisible entre X")
 	void Test1() {
 		assertEquals(true, funcion1.Funcion1(33));
-
+	//Jesus Cansino Molina
+	
+	@Test
+	@DisplayName("Test de Caja Negra Rangos")
+	void test2() {
+		assertTrue(funcion1.Funcion1(-66));
+		//DeberÃ­a salir True por que un numero negativo es divisible entre uno positivo
 	}
+}
 }
 
