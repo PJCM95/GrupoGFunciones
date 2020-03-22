@@ -34,7 +34,7 @@ public class TestFuncion5Test {
         funcion6 = null;
         System.out.println("Todas las pruebas realizadas");
     }
-    //JosÃ© Antonio Reina Montes
+    //José Antonio Reina Montes
     @DisplayName("Test de analisis de limites")
     @Test
     void test1() {
@@ -43,7 +43,14 @@ public class TestFuncion5Test {
 //Jesus Cansino Molina
 @DisplayName("Test de Caja Negra con cadena")
     @Test
-    void testFuncion6() {
+    void test2() {
         assertArrayEquals({6, 72, 12, 1}, funcion.funcion6({1, 2, 2, 1}));
+    }
+
+    //Pablo Cerero
+    @DisplayName ("Caja Negra con Null")
+    @Test
+    void test3() {
+        assertNull(0, 0, 0, 0, funcion.funcion6(null));
     }
 }
