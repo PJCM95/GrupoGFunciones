@@ -1,4 +1,3 @@
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -19,27 +18,42 @@ public class TestFuncion7Test {
     }
 
     @BeforeEach
-	private void cont() {
-		contpru++;
-		System.out.println("Empezamos la prueba "+contpru);
-	}
+    private void cont() {
+        contpru++;
+        System.out.println("Empezamos la prueba "+contpru);
+    }
 
-	@AfterEach
-	private void noveces() {
-		System.out.println("Se han realizado "+ contpru +" pruebas");
-	}
+    @AfterEach
+    private void noveces() {
+        System.out.println("Se han realizado "+ contpru +" pruebas");
+    }
 
-	@AfterAll
-	static void acabar() {
-		contpru = 0;
-		funcion7 = null;
-		System.out.println("Todas las pruebas realizadas");
-	}
-	//José Antonio Reina 
-	 @DisplayName("Test de Caja Negra Valor Nulo")
-	 @Test
-	    void test1() {
-	        assertNull(" ", funcion7.Funcion7(null));
-	    }
+    @AfterAll
+    static void acabar() {
+        contpru = 0;
+        funcion7 = null;
+        System.out.println("Todas las pruebas realizadas");
+    }
+    //José Antonio Reina 
+     @DisplayName("Test de Caja Negra Valor Nulo")
+     @Test
+        void test1() {
+            assertNull(" ", funcion7.Funcion7(null));
+        }
+    //Jesus Cansino Molina
+@DisplayName("Test de Caja Negra con array")
+    @Test
+    void test2() {
+        assertArrayEquals({"desa" ,"araE", "Roja", "alif"},
+                Funcion.funcion7({"LecheCondesada", "PenaltiParaElBetis", "AlfombraRoja", "Superescalifragilistico"});
+    }
 
+    //Pablo Cerero
+
+    @DisplayName("Test de analisis de limites");
+    @Test
+    void test3() {
+        assertArrayEquals("","","","", funcion.funcion7("a", "b", "c","d"));
+        assertArrayEquals("78910", funcion.funcion7("12345678910"));
+    }
 }
