@@ -18,33 +18,39 @@ public class TestFuncion8Test {
     }
 
     @BeforeEach
-	private void cont() {
-		contpru++;
-		System.out.println("Empezamos la prueba "+contpru);
-	}
+    private void cont() {
+        contpru++;
+        System.out.println("Empezamos la prueba "+contpru);
+    }
 
-	@AfterEach
-	private void noveces() {
-		System.out.println("Se han realizado "+ contpru +" pruebas");
-	}
+    @AfterEach
+    private void noveces() {
+        System.out.println("Se han realizado "+ contpru +" pruebas");
+    }
 
-	@AfterAll
-	static void acabar() {
-		contpru = 0;
-		funcion8 = null;
-		System.out.println("Todas las pruebas realizadas");
-	}
-	
-	//Jose Antonio Reina 
-	 @DisplayName ("Prueba de caja negra correcta: ")
-		@Test
-		void test1(){
-			ArrayList <String> alumnos = new arrayList <String> ();
-			alumnos.add("Laura");
-			alumnos.add("Luis");
-			alumnos.add("Juan");
-			int [][] time = {{700,700,700}, {300,300,300}, {500,500,500}};
-			assertEquals(true, funcion8.Funcion8 (time, alumnos));
+    @AfterAll
+    static void acabar() {
+        contpru = 0;
+        funcion8 = null;
+        System.out.println("Todas las pruebas realizadas");
+    }
+    
+    //Jose Antonio Reina 
+     @DisplayName ("Prueba de caja negra correcta: ")
+        @Test
+        void test1(){
+            ArrayList <String> alumnos = new arrayList <String> ();
+            alumnos.add("Laura");
+            alumnos.add("Luis");
+            alumnos.add("Juan");
+            int [][] time = {{700,700,700}, {300,300,300}, {500,500,500}};
+            assertEquals(true, funcion8.Funcion8 (time, alumnos));
 
-	}
+    }
+//Jesus Cansino Molina
+@DisplayName ("Test Limites")
+    @Test 
+    void test2() {
+    }
+
 }
