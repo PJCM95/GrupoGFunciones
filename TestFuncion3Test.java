@@ -1,5 +1,3 @@
-package GrupoG;
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -20,29 +18,40 @@ public class TestFuncion3Test {
     }
 
     @BeforeEach
-	private void cont() {
-		contpru++;
-		System.out.println("Empezamos la prueba "+contpru);
-	}
+    private void cont() {
+        contpru++;
+        System.out.println("Empezamos la prueba "+contpru);
+    }
 
-	@AfterEach
-	private void noveces() {
-		System.out.println("Se han realizado "+ contpru +" pruebas");
-	}
+    @AfterEach
+    private void noveces() {
+        System.out.println("Se han realizado "+ contpru +" pruebas");
+    }
 
-	@AfterAll
-	static void acabar() {
-		contpru = 0;
-		funcion3 = null;
-		System.out.println("Todas las pruebas realizadas");
-	}
-	
-	//Jos� Antonio Reina Montes
-	@DisplayName("Test de Caja Negra Con Valor")
+    @AfterAll
+    static void acabar() {
+        contpru = 0;
+        funcion3 = null;
+        System.out.println("Todas las pruebas realizadas");
+    }
+    
+    //José Antonio Reina Montes
+    @DisplayName("Test de Caja Negra Con Valor")
     @Test
     void test1() {
         assertEquals(0, funcion3.Funcion3(56, 13));
     }
-}
+    //Jesus Cansino Molina
+    @DisplayName("Test de Caja Negra con valores aleatorios")
+    
+    @Test
+    
+    //Test de caja negra aleatoria.
+    void test3() {
+        assertEquals(true, funcion.funcion1((int)(Math.random() * 20)));
+        //le pasamos un número aleatorio del 0 al 10, el int lo convierte en entero.
+    }
 
-   
+
+
+}
